@@ -267,3 +267,52 @@ switch (todo) {
 }
 // end of switch문 //
 
+//for문//
+//i++  -> (i=i+1)를 뜻함
+//i+=2 -> (i=i+2)를 뜻함
+//i+=5 -> (i=i+5)를 뜻함
+
+//for loop의 시작값; 조건값; i++
+for(let i=0; i<10; i++){
+  console.log("하이", i)
+}
+
+//짝수값만 호출하는 경우
+//case1
+for(let i=0; i<10; i+=2){
+    console.log("하이", i)
+} 
+//case2(이지만 데이터가 case1에 비해 조금 느리게 호출된다)
+for(let i=0; i<10; i++){
+  if(i%2==0){
+    console.log("하이", i)
+  }
+}
+
+//for문과 while문
+  //for문: 정확히 얼만큼 for문을 돌리고 싶은지 '범위'를 알때
+  for(let i=2; i<=9; i++){
+    console.log(i)
+   }
+
+ //while문: '범위'는 아니지만 정확히 어떠한 '상태'일때 실행을 시키고 싶은지 알때
+ let i=2
+ while(i<10) {
+   console.log(i)
+   i++;
+ }
+
+//따라서 while문은 주로 이렇게 사용된다.
+ while(buttonclicked == true){
+   console.log(i)
+ }
+
+ //for문과 Array배열
+let fruit = ["apple","banana", "grape", "mango"]
+
+//.length는 배열에서 주어지는 속성값 중 하나 -> 배열의'길이'를 뜻함 (아이템의 개수=4)
+for(let i=0; i<fruit.length; i++){
+  console.log(fruit[i])
+}
+
+// end of for문 //
