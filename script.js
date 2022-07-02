@@ -141,3 +141,28 @@ let newList = animals.slice(animals.indexOf("Baboon"),animals.indexOf("Bison")+1
 console.log(newList)
 
 //End of "Array"//
+
+// Object// 
+let student = {
+    name: "Stella",
+    age: 21,
+    year: "yr2"
+  }
+  
+  console.log(student)
+  
+  //특정 값만 보고 싶을때
+  console.log(student.name) //또는
+  console.log(student["name"])
+  
+  //값을 변경하고 싶을때
+  student.name = "Ha" //또는
+  student["name"] = "Ha"
+  console.log(student)
+  
+  let studentLst = [{name:"Stella", age: 21 },{name:"Steve", age: 23 },{name:"Bob", age: 22 }]
+  
+  console.log(studentLst)
+  console.log("첫번째 학생은:", studentLst[0])
+  console.log("첫번째 학생의 나이는?", studentLst[0].age) //또는
+  console.log("첫번째 학생의 나이는?", studentLst[0]["age"])
