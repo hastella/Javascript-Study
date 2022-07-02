@@ -238,3 +238,32 @@ if(skills.includes("Javascript") && skills.includes("React")){
 }
 // end of if문 //
 
+//switch문//
+let todo = 5
+
+if(todo == 1) {
+  console.log("장보기")
+} else if (todo == 2 ){
+  console.log("운동하기")
+} else if (todo == 3 ){
+  console.log("스케줄확인")
+} else {
+  console.log("물마시기")
+}
+
+
+switch (todo) {
+  case 1:
+    console.log("장보기")
+    break;
+  case 2:
+    console.log("운동하기")
+    break;
+  case 3:
+    console.log("스케줄확인")
+       break;
+  default:
+    console.log("물마시기")
+}
+// end of switch문 //
+
