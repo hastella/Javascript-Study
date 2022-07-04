@@ -315,4 +315,34 @@ for(let i=0; i<fruit.length; i++){
   console.log(fruit[i])
 }
 
+  //for loop을 이용한 문제들
+    // Q1. 1부터 100까지 더하는 for문을 만들고 결과를 출력하시오.
+      let sum = 0;
+      for(let i=1; i<=100; i++){
+        sum = sum + i
+      }
+      console.log(sum)
+
+    // Q2. 1부터 100까지 홀수만 출력하자.
+      for(let i=1; i<=100; i+=2){
+      console.log(i)
+      }
+
+    // Q3. 1부터 50까지 369결과를 프린트하자.
+
+
+    // Q4. 주어진 숫자가 소수이면 true 아니면 false를 출력하는 프로그램을 짜시오.
+      let n = 9
+      let isPrime = true
+
+      if(n == 1) {
+          isPrime = false
+        }
+      for(let i=2; i<n; i++) {
+        if(n%i == 0){
+          isPrime = false
+        }
+      }
+      console.log(isPrime)
+  // end of Q //
 // end of for문 //
