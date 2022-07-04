@@ -330,6 +330,19 @@ for(let i=0; i<fruit.length; i++){
 
     // Q3. 1부터 50까지 369결과를 프린트하자.
 
+      for(let i=1; i<=50; i++){
+        let stringValue = i.toString()
+        let result = ""
+        for(let j=0; j<stringValue.length; j++){ 
+          //위에서 j는 인덱스값을 나타내준다
+          if(stringValue[j]==="3" || stringValue[j]==="6" ||         stringValue[j]==="9"){
+            result += "짝" 
+            //같은표현: result = result +"짝"
+          }
+        }
+        console.log(result.length>0 ? result : i) 
+        //result값이 하나라도 있다면 ? result값을 표시해준다 : 그게 아니라면 숫자값을 표시해준다
+      }
 
     // Q4. 주어진 숫자가 소수이면 true 아니면 false를 출력하는 프로그램을 짜시오.
       let n = 9
